@@ -5,7 +5,9 @@ import reportWebVitals from './reportWebVitals';
 import TimelineComponent from './components/timelineComponent';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Menu from './components/menu';
-import Kanban from './components/kanban';
+import KanbanComponent from './components/kanban';
+import Tags from './components/tags';
+import TagsComponent from './components/tags';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -18,8 +20,9 @@ root.render(
       <hr />
       <Switch>
         <Route exact path="/"  />
-        <Route path="/about" component={Kanban} />
+        <Route path="/kanban" component={KanbanComponent} />
         <Route path="/Timeline" component={TimelineComponent} />
+        <Route path="/Tags" component={TagsComponent} />
       </Switch>
     </div>
   </Router>
