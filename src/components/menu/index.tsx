@@ -14,6 +14,9 @@ const Menu = () => (
       <li>
         <Link to="/kanban">Kanban</Link>
       </li>
+      <li>
+        <Link to="/tags">Tags</Link>
+      </li>
     </ul>
   </div>
 );
